@@ -1,0 +1,206 @@
+﻿*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat",sans-serif;
+}
+
+body 
+{
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    min-height:100vh;
+    background:url("../image/back.jpg")no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: black;
+}
+.rubanTop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 100px;
+    background: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+.logo {
+    font-size: 32px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 700;
+    border: solid;
+    border-color: white;
+}
+    .logo:hover {
+        transform: scale(1.1);
+        -webkit-transition: 1s ease-in-out;
+    }
+
+.navbar a {
+    position: relative;
+    font-size: 18px;
+    color: white;
+    font-weight: 500;
+    text-decoration: none;
+    margin-left: 40px;
+}
+
+    .navbar a::before {
+        content: '';
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 0;
+        height: 2px;
+        background: red;
+        transition: .3s;
+    }
+
+    .navbar a:hover::before {
+        width: 100%;
+    }
+.login
+{
+    margin-top: 140px;
+    width:650px;
+    background:rgb(255,255,255,.1);
+    border: 2px solid rgba(255,255,255,.2);
+    box-shadow:0 0 10px rgba(0,0,0,.2);
+    backdrop-filter:blur(50px);
+    border-radius:10px;
+    color:white;
+    padding:50px 35px 35px;
+    
+}
+.login h1
+{
+    font-size:36px;
+    text-align:center;
+    margin-bottom:20px;
+}
+.login .input-box
+{
+    display:flex;
+    justify-content:space-between;
+    flex-wrap:wrap;
+
+}
+.input-box .input-field
+{
+    position:relative;
+    width:48%;
+    margin:13px 0;
+}
+.input-box .input-field input
+{
+    width:100%;
+    height:100%;
+    background:transparent;
+    border:2px solid rgba(255,255,255,.2);
+    outline:none;
+    font-size:16px;
+    color:#fff;
+    border-radius:6px;
+
+}
+.input-box .input-field input::placeholder
+{
+    color:#fff;
+
+}
+.input-box .input-field i
+{
+    position:absolute;
+    left:15px;
+    top:50%;
+    transform:translate(-50%);
+    font-size:20px;
+}
+.login .label
+{
+    display:inline-block;
+    font-size:14.5px;
+    margin:10px 0 23px;
+}
+.wrapper label input 
+{
+    accent-color:#fff;
+    margin-right:5px;
+}
+.login .bouton
+{
+    width:100%;
+    height:45px;
+    background:black;
+    border:none;
+    outline:none;
+    border-radius:6px;
+    box-shadow: 0 0 10px rgba(0,0,0,.1);
+    cursor:pointer;
+    font-size:16px;
+    color:#fff;
+    font-weight:600;
+}
+@media (max-width:576px)
+{
+    .input-box .input-field
+    {
+        width:100%;
+        margin:10px 0;
+    }
+}
+.retour
+{
+    font-size:x-large;
+    text-align:center;
+}
+
+#success-message {
+    color:white;
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background:black;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    z-index: 9999;
+    font-size: larger;
+    text-decoration: none;
+}
+.retour a
+{
+ color: white;
+}
+.acceuil
+{
+    margin-top: 60px;
+    width:75%;
+    height:45px;
+    background:rgb(255,255,255,.1);
+    border:none;
+    outline:none;
+    border-radius:6px;
+    box-shadow: 0 0 10px rgba(0,0,0,.1);
+    cursor:pointer;
+    font-size:16px;
+    color:#fff;
+    font-weight:600;
+}
+.revenir
+{
+    color:#fff;
+   background-color:black;
+    font-size: large;
+    cursor:pointer;
+    border-radius:6px;
+}

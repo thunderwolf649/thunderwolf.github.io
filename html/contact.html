@@ -1,0 +1,80 @@
+﻿<!DOCTYPE html>
+
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title> Connecticon le site pour vos achats  </title>
+    <meta name="viewport" content="width=device-width" >
+    <link rel="stylesheet" href="../style/style2.css">
+    <script src="../java/Script4.js" defer></script>
+   
+</head>
+<body>
+    <div id="division">
+        <div class="background-image">
+            <header class="rubanTop">
+                <a class="logo" href="../index.html">
+                    <img src="../image/logo.png" alt="logo" width="60" height="50" >
+                </a>
+                <nav class="navbar">
+                    <a href="services.html">Les multiples services offerts </a>
+                    <a href="contact.html">Formulaire d'enregistrement</a>
+                    <a href="apropos.html">À propos</a>
+                    <a href="ventes.html">Pièces informatiques</a>
+                </nav>
+            </header>
+            <div class="login">
+                <form action="../php/insert.php" method="post"></form>
+                <h1>Enregistrement</h1>
+                <form id="post">
+                <div class="input-box">
+                    <div class="input-field">
+                        <input type="text" placeholder="firstName" required name="firstName" >
+                    </div>
+                </div>
+                <div class="input-box">
+                    <div class="input-field">
+                        <input type="text" placeholder="lastName" required name="lastName" >
+                    </div>
+                </div>
+                <div class="input-box">
+                    <div class="input-field">
+                        <input type="email" placeholder="E-mail" required >
+                    </div>
+                </div>
+                <div class="input-box">
+                    <div class="input-field">
+                        <input type="tel" placeholder="Numéros de téléphone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required >
+                    </div>
+                </div>
+                <div class="input-box">
+                    <div class="input-field">
+                        <input type="password" placeholder="Mots de passe" required >
+                    </div>
+                </div>
+                <div class="input-box">
+                    <div class="input-field">
+                        <input type="password" placeholder="Confirmer le mots de passe" required >
+                    </div>
+                </div>
+                <label id="texte" class="commentaire">Avez-vous un commentaire à donner afin d'améliorer l'expérience ?</label>
+                <textarea rows="5" cols="85" id="com"></textarea>
+                <label><input type="checkbox" required>Je déclare que toutes les informations inscrites sont exactes.</label>
+                <button type="submit" class="bouton">s'enregistrer ! </button>
+                </form>
+                <div id="success-message">
+                    Le formulaire a été envoyé avec succès!
+                    Vous Pouvez a tout moment retourner a la page d'acceuil en suivant le liens ci-dessous :
+                    <a href="../index.html">Retourner a la page d'acceuil</a> 
+                </div>
+            </div>     
+            <div class="retour">
+                <form style="display:inline ;" action="../index.html" method="get">
+                <button class="acceuil">Retourner à la page d'accueil</button>
+            </form>
+                </div>
+            </div>
+            </div>
+
+</body>
+</html>
